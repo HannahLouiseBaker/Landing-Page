@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing Page</title>
+    <link href="MyStyle.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="Forest-Labs-Logo.jpg" alt="Forest Labs Logo"/>
+      <nav id="nav-bar">
+        <!--<ul>
+          <li id="nav-content" class="nav-link"><a href="#content">Course Content</a></li>
+          <li id="nav-pricing" class="nav-link"><a href="#pricing">Pricing</a></li>
+          <li id="nav-enroll" class="nav-link"><a href="#form">Enroll</a></li>-->
+          <a id="nav-content" class="nav-link" href="#content">Course Content</a>
+          <a id="nav-pricing" class="nav-link" href="#pricing">Pricing</a>
+          <a id="nav-enroll" class="nav-link" href="#form">Enroll</a>
+      </nav>
+    </header>
+    <main>
+      <section id="intro">
+        <div id="intro-combined">
+        <div id="intro-text">
+          <h1>The Forest Labs <br/>Course</h1>
+          <p>This course is for teachers who are interested in the benefits of outdoor learning and want to discover how to
+          conduct classes in unconventional, natural environments.</p>
+          <button class="button" type="submit">Enroll Now</button>
+          <br/>
+          <a href="#content">Learn more</a>
+        </div>
+        <div id="intro-video" class="video-wrapper">
+          <iframe id="video" width="560" height="350" src="https://www.youtube.com/embed/NV6YYfQl3RI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+      </section>
+      <section id="content">
+        <h2>The Forest Labs Course</h2>
+        <h3>Course Content</h3>
+        <div id="module-one">
+          <h4>Module One</h4>
+          <ul>You'll learn:
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a semper nunc.</li>
+            <li>In scelerisque, tellus quis pulvinar varius, nibh eros facilisis urna, sed cursus diam neque vel enim.</li>
+            <li>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
+            <li>Sed a orci risus.</li>
+          </ul>
+        </div>
+        <div id="module-two">
+          <h4>Module Two</h4>
+          <ul>You'll learn:
+            <li>Mauris maximus sodales est id tempus.</li>
+            <li>Nulla non laoreet eros. In accumsan turpis in consequat bibendum.</li>
+            <li>Pellentesque eu arcu dapibus, pulvinar metus quis, accumsan mi.</li>
+            <li>Nulla sem ipsum, malesuada vel justo quis, aliquet interdum mi.</li>
+          </ul>
+        </div>
+        <div id="module-three">
+          <h4>Module Three</h4>
+          <ul>You'll learn:
+            <li>Sed consequat quam non libero egestas, vel placerat velit pharetra.</li>
+            <li>Quisque semper ante a ex egestas ultricies.</li>
+            <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus enim enim, luctus nec cursus at, dignissim sed elit.</li>
+            <li>Sed ut placerat erat.</li>
+          </ul>
+        </div>
+        <div id="module-four">
+          <h4>Module Four</h4>
+          <ul>You'll learn:
+            <li>Aliquam hendrerit sit amet nisl non aliquam.</li>
+            <li>Sed ullamcorper cursus tortor, id volutpat turpis pulvinar non.</li>
+            <li>Nullam id eros et metus accumsan luctus. Nulla varius consequat elementum.</li>
+            <li>Fusce dignissim tincidunt mi, porttitor dignissim arcu pulvinar in.</li>
+          </ul>
+        </div>
+      </section>
+      <section id="pricing">
+        <h2>Pricing</h2>
+        <div id="price">
+          <div id="price-1">
+            <h3>Forest Labs Course <br/>Only</h3>
+            <h4>£600</h4>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p id="select-1" class="price-button">Select</p>
+          </div>
+          <div id="price-2">
+            <h3>Forest Labs Course & <br/>1-Day Workshop</h3>
+            <h4>£900</h4>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p id="select-2" class="price-button">Select</p>
+          </div>
+          <div id="price-3">
+            <h3>Forest Labs Course, Workshop & Coaching</h3>
+            <h4>£1,400</h4>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p id="select-3" class="price-button">Select</p>
+          </div>
+        </div>
+      </section>
+      <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+        <h2>Enroll Now!</h2>
+        <p>To enroll in the course, fill in your details below.</p>
+        <label for="name">Your Name:</label>
+        <input id="name" type="text" placeholder="Your Name"/>
+        <br/>
+        <label for="email">Your Email:</label>
+        <input id="email" name="email" type="email" placeholder="Your Email"/>
+        <br/>
+        <button id="submit" class="button" type="submit">Sign Me Up!</button>
+      </form>
+    </main>
+  </body>
+</html>
