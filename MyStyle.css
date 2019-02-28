@@ -1,0 +1,271 @@
+/* myStyle.css */
+
+/*General*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+h3 {
+  font-family: Raleway, sans-serif;
+  padding: 20px 0;
+}
+
+h4 {
+  font-family: Raleway, sans-serif;
+  padding: 10px 0;
+}
+
+p, ul, li, label, #name, #email, a {
+  font-family: Raleway, sans-serif;
+}
+
+label {
+  line-height:50px;
+}
+
+.button {
+  width: 140px;
+  height: 60px;
+  margin: 20px 0;
+  padding: 20px;
+  color: white;
+  background-color: #558e61;
+  border-color: #558e61;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: black;
+  border-color: black;
+}
+
+/*.price-button {
+  width: 93.3334px;
+  height: 40px;
+  margin: 20px 0;
+  padding: 5px;
+  color: white;
+  background-color: #558e61;
+  border-color: #558e61;
+  border-radius: 13.3334px;
+}*/
+
+.price-button {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 5px;
+  color: white;
+  background-color: #558e61;
+  border-color: #558e61;
+  border-radius: 0;
+}
+
+.price-button:hover {
+  background-color: black;
+}
+
+/*Header & Navigation*/
+
+#header {
+  width: 100%;
+  height: 121px;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  z-index: 2;
+}
+
+#nav-bar {
+  float: right;
+  height: 120px;
+  padding: 50px 0;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
+#nav-bar li {
+  display: inline-block;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-content, #nav-pricing, #nav-enroll {
+  padding: 0 50px;
+}
+
+/*Intro Section*/
+
+main {
+    position: relative;
+    top: 120px;
+    z-index: 1;
+}
+
+#intro {
+  padding: 100px;
+  background: url("intro-background-white.jpg");
+  height: 100%;
+}
+
+#intro-combined {
+  display: flex;
+  /*border: 1px solid gray;
+  background-color: rgba(255, 255, 255, 0.5)*/;
+}
+
+#intro-text {
+  text-align: center;
+  margin: 20px 0 20px 20px;
+  padding: 40px;
+  width: 60%;
+}
+
+#intro-video {
+  margin: 20px 20px 20px 0;
+  padding: 60px 0px;
+  width: 40%;
+}
+
+/* Code taken from https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php*/
+
+.video-wrapper iframe {
+	width: 100%;
+	height: 100%;
+}
+/*End of copied code*/
+
+/*Main Section*/
+
+#content, #pricing, #enroll {
+  margin: 50px 20%;
+}
+
+#module-one, #module-two, #module-three, #module-four {
+  margin: 20px 0;
+}
+
+#content {
+  background-color: #D3ECD7 /*CBE3D5*/;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+#pricing {
+  text-align: center;
+}
+
+#pricing p {
+  line-height: 30px;
+}
+
+#price {
+  display: flex;
+}
+
+#price h3 {
+  padding: 0;
+}
+
+#price-1, #price-2, #price-3 {
+  width: 33.333%;
+  border: 1px solid black;
+  padding: 5% 0 0 0;
+}
+
+#price-1 {
+  margin: 0 2.5% 0 0;
+}
+
+#price-3 {
+  margin: 0 0 0 2.5%;
+}
+
+#price-3 h3 {
+  padding: 0 2.5%;
+}
+
+#form {
+    background-color: gray;
+    padding: 50px 20%;
+}
+
+/*Responsive Rules*/
+
+@media (max-width: 1200px) {
+  #intro {
+    padding: 100px 50px;
+  }
+
+  #intro-text {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #content, #pricing, #enroll {
+    margin: 50px 10%;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  #intro {
+    padding: 100px 20px;
+  }
+
+  #intro-combined {
+    display: block;
+  }
+
+  #intro-text {
+    width: 95%;
+    margin: auto;
+  }
+
+  #intro-video {
+    width: 95%;
+    margin: auto;
+  }
+
+  #content, #pricing, #enroll {
+    margin: 50px 5%;
+  }
+
+  #price {
+    display: block;
+  }
+
+  #price-1, #price-2, #price-3 {
+    margin: 10px auto;
+    width: 50%;
+
+  }
+  }
+
+@media (max-width: 600px) {
+  #price-1, #price-2, #price-3 {
+    width: 80%;
+}
+}
